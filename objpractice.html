@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      // object - update,rename,destructuring,spread,rest
+const boutique={
+     locality:'KERALA',
+     managerName : "LATHA",
+     designer : "RIYA",
+     est : 2025,
+     specialised : {
+        design : "Ethnic",
+     }
+
+};
+
+console.log(boutique.locality);
+console.log(boutique['est']);
+console.log(boutique.specialised.design);
+console.log(boutique['specialised']['design']);
+const {locality,managerName,designer,est,specialised:{design}} = boutique;
+console.log(designer);
+
+//
+const hotelA={
+     loc:'KERALA',
+     partnerName : "Manoj",
+     chef : "Prabhu",
+     estb : 2024
+
+};
+const hotelB={
+     locB :'Karnataka',
+     partnerNameB : "Emma",
+     chefB : "Alex",
+
+};
+const {loc:branch,partnerName,chef,estb=2025} =hotelA;
+const {locB,partnerNameB,chefB,estB=2027} =hotelB;
+console.log(estB);
+console.log(estb);
+console.log(branch)
+
+const hotels = {...hotelA,...hotelB};
+console.log(hotels);
+const{loc,...others} = hotelA;
+console.log(others);
+
+    </script>
+</body>
+</html>
