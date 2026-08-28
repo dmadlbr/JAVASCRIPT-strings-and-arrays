@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+//Nested destructuring
+const addr={
+     instiName : "Techolas",
+     address : {
+          city : "Mavoor",
+          place : "Kozhikode"
+     }
+};
+const {instiName,address:{city,place}} = addr;
+console.log(city);
+console.log(instiName);
+
+//Spread
+//copy
+const report = {
+     name : "Nancy",
+     mark : 55,
+     subject : 'Maths'
+};
+const stuReport = {...report};
+console.log(stuReport)
+//combine
+const address = {
+     pin : 673658,
+     state : "kerala",
+     country : 'india'
+
+};
+const student = {...report,...address};
+console.log(student);
+const studentDetails = {...report,...address,mark:58,mark:90};
+const studentDetail = {...report,...address,age:21}
+console.log(studentDetails);
+console.log(studentDetail);
+
+//rest 
+const fruits = {
+     type : 'apple',
+     quantity : '2kg',
+     model : 'african'
+}
+const{type,...fruDetails} = fruits;
+console.log(fruDetails);
+console.log(type)
+
+
+    </script>
+</body>
+</html>
