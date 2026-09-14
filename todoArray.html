@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todoArray.css">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="flex flex-col items-center justify-center">
+    <div class="flex flex-col items-center justify-center">
+    <form id=todoForm action="">
+        <div class="flex flex-col items-center justify-center mt-10 gap-3">
+        <div class="flex justify-between items-end w-100">
+        <label for="input">Enter your task</label>
+        <span id="counter">0</span>
+        </div>
+        <input type="text" id="input" placeholder="Eg: Read Newspaper" class="p-5 w-100 border border-yellow-400">
+        <span id="count"></span>
+        <button type="submit" id="btn" class="p-5 w-100 rounded-lg text-white border border-white bg-yellow-400 hover:bg-white hover:text-yellow-400 hover:scale-90">Add to To Do List</button>
+        </div>   
+
+
+    </form>
+    </div>
+    <div class="mt-5">
+        <ul id="ipList"></ul>
+    </div>
+
+    </div>
+
+
+
+    <script src="todoArray.js"></script>
+</body>
+</html>

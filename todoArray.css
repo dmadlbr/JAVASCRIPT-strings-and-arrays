@@ -1,0 +1,48 @@
+.deleteBtn {
+    background-color: lightyellow;
+    color: red;
+    padding: 5px;
+    width: 100px;
+    border-radius: 50px;
+    border: 1px solid red;
+    margin-inline: 5px;
+}
+
+.editBtn {
+    margin-inline: 5px;
+    background-color: lightyellow;
+    padding: 5px;
+    width: 100px;
+    color: green;
+    border-radius: 50px;
+    border: 1px solid green;
+    margin-top: 10px;
+}
+
+.stsBtn{
+    margin-inline: 5px;
+    background-color: lightyellow;
+    padding: 5px;
+    width: 100px;
+    color: orange;
+    border-radius: 50px;
+    border: 1px solid orange;
+    margin-top: 10px;
+}
+
+.updtBtn{
+    margin-inline: 5px;
+    background-color: lightyellow;
+    padding: 5px;
+    width: 100px;
+    color: blue;
+    border-radius: 50px;
+    border: 1px solid blue;
+    margin-top: 10px;
+}
+
+.btnContainer{
+    display: flex;
+    gap: 4px;
+    margin-top: 10px;
+}
