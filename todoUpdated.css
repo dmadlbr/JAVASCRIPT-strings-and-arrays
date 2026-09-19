@@ -1,0 +1,20 @@
+.deleteBtn {
+    background-color: lightyellow;
+    color: red;
+    padding: 5px;
+    width: 100px;
+    border-radius: 50px;
+    border: 1px solid red;
+    margin-inline: 5px;
+}
+
+.editBtn {
+    margin-inline: 5px;
+    background-color: lightyellow;
+    padding: 5px;
+    width: 100px;
+    color: green;
+    border-radius: 50px;
+    border: 1px solid green;
+    margin-top: 10px;
+}
