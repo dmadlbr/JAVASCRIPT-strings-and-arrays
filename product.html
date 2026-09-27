@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <header id="head">
+        <img src="./assets/amazon.png" class="h-30 ps-5">
+        <div class="cart">
+        <i class="fa-solid fa-cart-shopping text-xl" id="cartIcon"></i>
+       
+        <span id="cartCount" >0</span>
+         </div>
+        
+    </header>
+    <div class="main_container" id="container">
+        <section class="loading" id="loading">
+            <div></div>
+        </section>
+    </div>
+
+    <div class="pagination">
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+    </div>
+    
+    <script src="product.js"></script>
+</body>
+</html>

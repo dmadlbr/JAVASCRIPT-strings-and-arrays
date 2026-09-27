@@ -1,0 +1,173 @@
+#head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.cart{
+    display: flex;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    right: 30px;
+    justify-content: center;
+    align-items: center;
+    
+} 
+ 
+#cartCount{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: rgb(108, 182, 108);
+   
+}
+
+.main_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    padding: 20px;
+    
+}
+
+.img{
+    height: 300px;
+    
+    
+}
+
+.img:hover{
+    transform: scale(1.1);
+}
+
+.card{
+    border: 2px solid burlywood;
+    border-radius: 30px;
+    padding: 20px;
+  
+}
+
+.brand{
+    text-align: center;
+    font-weight: bold;
+}
+
+.title{
+    text-align: center;
+}
+
+.pr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.price{
+    color:green
+}
+
+.rating{
+    color: orange;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.btn{
+    background-color: rgba(241, 241, 25, 0.567);
+    color: green;
+    border: 2px solid yellow;
+    border-radius: 50px;
+    padding-inline: 20px;
+    padding-block: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: auto;
+}
+
+.btn2{
+    background-color: rgba(241, 241, 25, 0.567);
+    color: green;
+    border: 2px solid yellow;
+    border-radius: 50px;
+    padding-inline: 20px;
+    padding-block: 5px;
+    display: block;
+    margin: auto;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.btn2:hover{
+    transform: scale(1.1);
+}
+
+.qtyWrapper{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dec,.inc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+
+}
+
+.qty{
+    font-weight: bold;
+    text-align: center;
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    position: absolute;
+}
+
+.loading div{
+    width: 50px;
+    height: 50px;
+    border: 4px dotted black;
+    border-bottom: none;
+    /* border-block-color: transparent; */
+    border-radius: 100%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from{
+        rotate: 0deg;
+    }to{
+        rotate: 360deg;
+    }
+}
